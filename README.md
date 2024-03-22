@@ -61,5 +61,21 @@ There is a positive association between the total fat content (PDV) and calories
   frameborder="0"
 ></iframe>
 
+### Interesting Aggregates
+
+The categorization into 'low fat,' 'medium fat,' and 'high fat' is based on predefined nutritional criteria that classify recipes according to their total fat content.
+
+Low Fat: Recipes with a total fat content that is less than 5% of the daily value (PDV).
+Medium Fat: Recipes with a total fat content that falls within a moderate range of PDV, say 5-20% PDV.
+High Fat: Recipes where the total fat content exceeds a higher percentage of PDV, such as more than 20% PDV.
+
+The mean ratings are very close across categories, hovering around 4.6, with a consistent median of 5.0, suggesting a generally high and similar level of satisfaction among all fat content categories. The 'count' indicates that 'high fat' recipes are the most frequent in this dataset, followed by 'medium fat' and 'low fat'. This analysis revealed that users' average satisfaction does not significantly vary across these categories.
+
+| mean | median | count |
+|---|---|---|
+| 4.593647408201392 | 5.0 | 9055.0 |
+| 4.613088847088592 | 5.0 | 26624.0 |
+| 4.632461647366762 | 5.0 | 39405.0 |
+
 
 
