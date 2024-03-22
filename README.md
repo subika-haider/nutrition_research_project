@@ -44,7 +44,7 @@ Here are the first 5 rows of our cleaned dataset:
 The following plot is used to show 
 
 <iframe
-  src="assets/file-name.html"
+  src="assets/plotly_histogram.html"
   width="800"
   height="600"
   frameborder="0"
