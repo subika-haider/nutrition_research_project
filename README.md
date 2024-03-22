@@ -41,7 +41,7 @@ Here are the first 5 rows of our cleaned dataset:
 
 ### Univariate Analysis
 
-The following plot is used to show 
+Most of the recipes have a score of 5. This pattern may indicate that the recipes in the dataset have been well-received overall. Also, notice that there are no ratings less than the integer value 1, since we replaced the values 0 with np.nan earlier in our data cleaning process.
 
 <iframe
   src="assets/plotly_histogram.html"
