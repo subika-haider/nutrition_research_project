@@ -121,6 +121,11 @@ The mean ratings are very close across categories, hovering around 4.6, with a c
 
 ## Baseline Model
 
+**Features**:
+- `n_ingredients`: Quantitative (number of ingredients)
+- `total_fat`: Quantitative (total fat content)
+
+**Model Assessment**: The RMSE score of our model came out to be approximately 288 which indicates that, on average, the model's predictions deviate from the actual values of calorie content of recipes by 288 units. Since this number is too high, we would classify the performance of this model as average.
 
 
 
