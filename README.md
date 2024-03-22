@@ -50,3 +50,16 @@ Most of the recipes have a score of 5. This pattern may indicate that the recipe
   frameborder="0"
 ></iframe>
 
+### Bivariate Analysis
+
+There is a positive association between the total fat content (PDV) and calories in recipes, indicating that recipes with higher fat content typically have higher calorie content. The total fat, however, does not rise proportionally to the number of calories until a certain threshold, suggesting that other substances might also make a substantial contribution to the calorie content.
+
+<iframe
+  src="assets/plotly_scatter.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+
+
