@@ -90,11 +90,9 @@ The mean ratings are very close across categories, hovering around 4.6, with a c
 
 ## Assessment of Missingness
 
-### NMAR Analysis
+The column we decided to assess the missingness of is the `avg_rating` column. The other two columns we selected are the `n_steps` and the `n_ingredients` columns. We suspect a potential link between the missingness of `avg_rating` and n_steps` because recipes with more number of steps might me more complex and therefore, less people might try and rate them.
 
-
-
-### Missingness Dependency
+However, we do not suspect any logical link between the missingness of the `n_ingredients` and the `avg_rating` columns.
 
 ## Hypothesis Testing
 
