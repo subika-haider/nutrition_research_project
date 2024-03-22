@@ -71,11 +71,11 @@ High Fat: Recipes where the total fat content exceeds a higher percentage of PDV
 
 The mean ratings are very close across categories, hovering around 4.6, with a consistent median of 5.0, suggesting a generally high and similar level of satisfaction among all fat content categories. The 'count' indicates that 'high fat' recipes are the most frequent in this dataset, followed by 'medium fat' and 'low fat'. This analysis revealed that users' average satisfaction does not significantly vary across these categories.
 
-| mean | median | count |
-|---|---|---|
-| 4.593647408201392 | 5.0 | 9055.0 |
-| 4.613088847088592 | 5.0 | 26624.0 |
-| 4.632461647366762 | 5.0 | 39405.0 |
+|---| mean | median | count |
+| fat_category |---|---|---|
+| low fat | 4.593647408201392 | 5.0 | 9055.0 |
+| medium fat | 4.613088847088592 | 5.0 | 26624.0 |
+| high fat | 4.632461647366762 | 5.0 | 39405.0 |
 
 
 
