@@ -100,18 +100,29 @@ The mean ratings are very close across categories, hovering around 4.6, with a c
 ## Framing a Prediction Problem
 
 **Prediction Problem**: Predict the number of calories in a recipe.
+
 **Prediction Problem Type**: Regression
+
 **Response Variable**: `calories`. It is a metric that reflects the energy content of a recipe which is crucial for dietary planning and health assessments.
+
 **Features to Use**:
 - `n_ingredients`: Total number of ingredients in a recipe.
 - Nutritional information: Specifically `total_fat`, `sugar`, `sodium`, `protein`, `saturated_fat`, and `carbohydrates`.
 - `n_steps`: Number of preparation steps as an indicator of recipe complexity.
+
 **Evaluation Metric**: Root Mean Squared Error (RMSE) since it is a balanced choice between penalizing large errors and maintaining interpretability in the same units as the target variable.
+
 **Model Choice**: Random Forest Regressor since it can handle a mix of numerical and categorical features and for how robust it is to outlier values.
+
 **Preprocessing Steps**:
 - Impute missing values in nutritional information using median values.
 - Encode any categorical variables not listed above with one-hot encoding.
 - Scale numerical features to a standard range or distribution.
+
+## Baseline Model
+
+
+
 
 
 
