@@ -77,5 +77,14 @@ The mean ratings are very close across categories, hovering around 4.6, with a c
 | medium fat | 4.61 | 5.0    | 26624 |
 | high fat   | 4.63 | 5.0    | 39405 |
 
+## Assessment of Missingness
+
+### NMAR Analysis
+
+### Missingness Dependency
+
+## Hypothesis Testing
+
+
 
 
