@@ -44,7 +44,7 @@ Here are the first 5 rows of our cleaned dataset:
 Most of the recipes have a score of 5. This pattern may indicate that the recipes in the dataset have been well-received overall. Also, notice that there are no ratings less than the integer value 1, since we replaced the values 0 with np.nan earlier in our data cleaning process.
 
 <iframe
-  src="assets/plotly_histogram.html"
+  src="assets/plotly_hist.html"
   width="800"
   height="600"
   frameborder="0"
@@ -55,7 +55,7 @@ Most of the recipes have a score of 5. This pattern may indicate that the recipe
 There is a positive association between the total fat content (PDV) and calories in recipes, indicating that recipes with higher fat content typically have higher calorie content. The total fat, however, does not rise proportionally to the number of calories until a certain threshold, suggesting that other substances might also make a substantial contribution to the calorie content.
 
 <iframe
-  src="assets/plotly_scatter.html"
+  src="assets/plotly_scat.html"
   width="800"
   height="600"
   frameborder="0"
