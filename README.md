@@ -29,6 +29,15 @@ Our data cleaning process consisted of the following changes:
 - Grouping the recipes by their ID to calculate average rating of each unique recipe and adding that series to our existing dataframe.
 - Extracting information of the "Percent Daily Value" of the various nutritional content from the 'nutrition' column and storing it in seperate columns namely, 'calories', 'total_fat', 'sugar', 'sodium', 'protein', 'saturated_fat', and 'carbohydrates'.
 
+Here are the first 5 rows of our cleaned dataset:
+
+| id | minutes | n_steps | n_ingredients | rating | avg_rating | calories | total_fat | sugar | sodium | protein | saturated_fat | carbohydrates |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 333281.0 | 40.0 | 10.0 | 9.0 | 4.0 | 4.0 | 138.4 | 10.0 | 50.0 | 3.0 | 3.0 | 19.0 | 6.0 |
+| 453467.0 | 45.0 | 12.0 | 11.0 | 5.0 | 5.0 | 595.1 | 46.0 | 211.0 | 22.0 | 13.0 | 51.0 | 26.0 |
+| 306168.0 | 40.0 | 6.0 | 9.0 | 5.0 | 5.0 | 194.8 | 20.0 | 6.0 | 32.0 | 22.0 | 36.0 | 3.0 |
+| 306168.0 | 40.0 | 6.0 | 9.0 | 5.0 | 5.0 | 194.8 | 20.0 | 6.0 | 32.0 | 22.0 | 36.0 | 3.0 |
+| 306168.0 | 40.0 | 6.0 | 9.0 | 5.0 | 5.0 | 194.8 | 20.0 | 6.0 | 32.0 | 22.0 | 36.0 | 3.0 |
 
 
 
