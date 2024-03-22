@@ -85,6 +85,19 @@ The mean ratings are very close across categories, hovering around 4.6, with a c
 
 ## Hypothesis Testing
 
+**Null Hypothesis**: On average, healthier recipes and unhealthy recipes have a statistically insignificant difference in average cooking times.
+
+**Alternate Hypothesis**: On average, healthier recipes and unhealthy recipes have a statistically significant difference in average cooking times.
+
+**Test Statistic**: µ2 - µ1
+
+**Significance Level**: 5% or 0.05
+
+***p*-value**: 0.0786
+
+**Conclusion**: Since the *p*-value is greater than 0.05, we can conclude that there is no statistically significant difference in cooking times between healthy and unhealthy recipes. Therefore, we fail to reject the null hypothesis.
+
+
 
 
 
