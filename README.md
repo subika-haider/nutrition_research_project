@@ -14,8 +14,19 @@ This question is grounded in the broader context of dietary choices and meal pre
 
 The dataset contains 234429 rows, each representing a unique recipe. For our analysis, the following columns are particularly relevant:
 
-- id: An identification number for each unique recipe.
-- minutes: The total time required to prepare and cook the recipe in minutes.
+- `id`: An identification number for each unique recipe.
+- `minutes`: The total time required to prepare and cook the recipe in minutes.
+- `n_steps`: The number of steps needed for the recipe.
+- `n_ingredients`: The number of ingredients needed to prepare the recipe.
+- `rating`: The rating of each recipe.
+- `avg_rating`: The average rating of each unique recipe.
+- `calories`: The total number of calories in each recipe.
+- `total_fat`: The percentage of the daily value of total fat needed by the average person.
+- `sugar`: The percentage of the daily value of sugar needed by the average person.
+- `sodium`: The percentage of the daily value of sodium needed by the average person.
+- `protein`: The percentage of the daily value of sodium needed by the average person.
+- `saturated_fat`: The percentage of the daily value of saturated fat needed by the average person.
+- `carbohydrates`: The percentage of the daily value of carbohydrates needed by the average person.
 
 ## Data Cleaning and Exploratory Data Analysis
 
@@ -81,6 +92,8 @@ The mean ratings are very close across categories, hovering around 4.6, with a c
 
 ### NMAR Analysis
 
+
+
 ### Missingness Dependency
 
 ## Hypothesis Testing
@@ -126,6 +139,43 @@ The mean ratings are very close across categories, hovering around 4.6, with a c
 - `total_fat`: Quantitative (total fat content)
 
 **Model Assessment**: The RMSE score of our model came out to be approximately 288 which indicates that, on average, the model's predictions deviate from the actual values of calorie content of recipes by 288 units. Since this number is too high, we would classify the performance of this model as average.
+
+## Final Model
+
+**Use of `n_ingredients`**: The number of ingredients suggests the complexity of a recipe, potentially affecting its calorie count.
+
+**Use of `total_fat`**: Since fats are calorically dense, the total fat content is a direct indicator of a recipe's caloric value. We used this feature as-is to preserve its direct relationship with the target variable.
+
+**Use of `RandomForestRegressor`**: Chosen for their ability to handle complex data structures and reduce overfitting, making them suitable for predicting calories, which likely involves intricate interactions among ingredients.
+
+**Hyperparameter Tuning with `GridSearchCV`**: This systematic approach identified the best model settings by evaluating various combinations of hyperparameters across different subsets of the data, optimizing for accuracy as measured by the negative RMSE.
+
+The strategic selection of features and optimization of model parameters lead to a final model that more accurately captured the underlying patterns in the data, resulting in better performance compared to the simpler, less tailored baseline model.
+
+## Fairness Analysis
+
+**Choice of Group X**: Recipes with a number of ingredients less than or equal to the median number of ingredients in the training dataset.
+
+**Choice of Group Y**: Recipes with a number of ingredients greater than the median.
+
+**Evaluation Metric**:
+- Root Mean Squared Error (RMSE) for evaluating prediction error.
+- R² Score for assessing the proportion of variance in the dependent variable that is predictable from the independent variable(s).
+
+**Null Hypothesis**: The model is fair (For a low number of ingredients vs high number of ingredients and low fat vs high fat, RMSE and R^2 are similar).
+
+**Alternate Hypothesis**: The model is unfair (For a low number of ingredients vs high number of ingredients and low fat vs high fat RMSE and R^2 are not similar). 
+
+**Test Statistic**: The difference in RMSE and R² scores between the two groups
+
+**Significance Level**: 5% or 0.05
+
+***p*-value**: 0.835
+
+**Conclusion**: Based on the analysis, there appears to be evidence enabling us to reject the null hypothesis, suggesting that the model may not be fair according to the defined metrics.
+
+
+
 
 
 
