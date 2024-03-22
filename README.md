@@ -39,5 +39,14 @@ Here are the first 5 rows of our cleaned dataset:
 | 306168.0 | 40.0 | 6.0 | 9.0 | 5.0 | 5.0 | 194.8 | 20.0 | 6.0 | 32.0 | 22.0 | 36.0 | 3.0 |
 | 306168.0 | 40.0 | 6.0 | 9.0 | 5.0 | 5.0 | 194.8 | 20.0 | 6.0 | 32.0 | 22.0 | 36.0 | 3.0 |
 
+### Univariate Analysis
 
+The following plot is used to show 
+
+<iframe
+  src="assets/file-name.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
